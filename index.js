@@ -10,6 +10,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const team = [];
 const Manager = require("./lib/Manager");
+const Employee = require("./lib/Employee");
 
 // Create Manager
 function createManager() {
@@ -42,7 +43,6 @@ function createManager() {
       const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerNumber);
       // Push manager on to team array.
       team.push(manager);
-      console.log(team);
       createTeam();
     });
 }
