@@ -9,6 +9,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const team = [];
+const Manager = require("./lib/Manager");
+
 // Create Manager
 function createManager() {
   inquirer
@@ -37,8 +39,10 @@ function createManager() {
     .then((answers) => {
       console.log(answers);
       // Create new Manager object from the manager class.
-
+      const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerNumber);
       // Push manager on to team array.
+      team.push(manager);
+      console.log(team);
       createTeam();
     });
 }
@@ -142,10 +146,10 @@ const generateHTML = (team) => `
     <title>Team Profile Generator</title>
 </head>
 <body>
-<div>${managerName}</div>
-<div>${managerId}</div>
-<div>${managerEmail}</div>
-<div>${managerNumber}</div>
+<div>${team[0].getName}</div>
+<div>${team[0].getId}</div>
+<div>${team[0].getEmail}</div>
+<div>${team[0].getOfficeNumber}</div>
 </body>
 </html>`;
 
