@@ -146,10 +146,10 @@ const generateHTML = (team) => `
     <title>Team Profile Generator</title>
 </head>
 <body>
-<div>${team[0].getName}</div>
-<div>${team[0].getId}</div>
-<div>${team[0].getEmail}</div>
-<div>${team[0].getOfficeNumber}</div>
+<div>${team[0].getName()}</div>
+<div>${team[0].getId()}</div>
+<div>${team[0].getEmail()}</div>
+<div>${team[0].getOfficeNumber()}</div>
 </body>
 </html>`;
 
