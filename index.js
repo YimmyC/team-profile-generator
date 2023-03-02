@@ -140,11 +140,11 @@ function createTeam() {
 
 const generateHTML = (team) => {
   const managerTemplate = ` <div class="manager-card">
-<div>${team[0].getName()}</div>
-<div>${team[0].getId()}</div>
-<div>${team[0].getEmail()}</div>
-<div>${team[0].getOfficeNumber()}</div>
-</div>`;
+  <div>${team[0].getName()}</div>
+  <div>${team[0].getId()}</div>
+  <div>${team[0].getEmail()}</div>
+  <div>${team[0].getOfficeNumber()}</div>
+  </div>`;
 
   const engineers = team.filter((employee) => employee.getRole() === "Engineer");
 
@@ -155,7 +155,7 @@ const generateHTML = (team) => {
   <div>${engineer.getName()}</div>
   <div>${engineer.getId()}</div>
   <div>${engineer.getEmail()}</div>
-  <div>${engineer.getGithub()}</div>
+  <div> <a href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a></div>
   </div>`;
   });
 
@@ -173,19 +173,19 @@ const generateHTML = (team) => {
   });
 
   const document = `<!DOCTYPE html>
-<html lang="en">
-<head>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Profile Generator</title>
-</head>
-<body>
-${managerTemplate}
-${engineerTemplate}
-${internTemplate}
-</body>
-</html>`;
+  </head>
+  <body>
+  ${managerTemplate}
+  ${engineerTemplate}
+  ${internTemplate}
+  </body>
+  </html>`;
 
   return document;
 };
