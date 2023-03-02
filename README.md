@@ -46,6 +46,4 @@ This project is licensed under MIT
 
 ![license](https://img.shields.io/badge/license-MIT-blue.png)
 
-[![Walkthrough1]({image-url})](https://drive.google.com/file/d/1TjZpI-BE0CKdzLfOkDy4UlrW6BrBTtyu/view "Walkthrough1")
-
-[![Walkthrough2]({image-url})](https://drive.google.com/file/d/1tWWbaR-PTlv9ho2Ubg27wv0GtNTbOALO/view "Walkthrough2")
+[![Walkthrough1]({image-url})](https://drive.google.com/file/d/107JG5qTwfPCHcLYvt5o5E2sHmbL8kS8x/view "Walkthrough1")
