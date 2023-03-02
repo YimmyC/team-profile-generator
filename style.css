@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.manager-card {
+    margin: 0 auto;
+    border: 6px solid green;
+    padding: 12px; 
+    border-radius: 6px;
+    width: 20%;
+}
+.engineer-card {
+    border: 6px solid rgb(16, 106, 141);
+    padding: 12px;
+    border-radius: 6px;
+    width: 20%;
+}
+.intern-card {
+    border: 6px solid rgb(243, 132, 5);
+    padding: 12px;
+    border-radius: 6px;
+    width: 20%;
+}
+
+.employee-wrapper {
+    display: flex;
+    margin: 0 auto;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.employee-name {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
